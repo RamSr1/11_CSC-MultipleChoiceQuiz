@@ -39,3 +39,6 @@ class SecondCounter(threading.Thread):
           # stop the while loop in method run
           self.alive = False
           return self.value
+
+
+def intro():
