@@ -97,4 +97,19 @@ def information():
   print("")
   print("╔════════════════════════════════════════════════════════════════════════════════╗")
   print("")
-  def warmup():
+def warmup():
+  print("\033[4m Here is a 3 question warmup, this won't affect your grade it is just a starter.\033[0m")
+  global score
+  score = 0
+  
+  # QUESTION 1
+  answer1 = input("What is 2 * 20 ? \n a. 35 \n b. 40 \n c. 28 \nAnswer: ")
+  if answer1 == "b" or answer1 == "40":
+      score += 1
+      print("Correct!")
+      print("Score: ", score)
+      print("\n")
+  else:
+      print("Incorrect! The right answer is 40")
+      print("Score: ", score)
+      print("\n")
